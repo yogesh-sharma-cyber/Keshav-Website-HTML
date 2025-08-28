@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keshav Texcon</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* This style is to prevent the fixed nav from overlapping the content */
+        body {
+            padding-top: 4rem;
+            /* Adjust based on your nav height */
+        }
+
+        /* Custom styles for the fixed background image to look better on mobile */
+        @media (max-width: 768px) {
+            .hero-bg {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-white shadow-lg fixed w-full z-20 top-0 left-0">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-gray-800 tracking-wide">
+                        KESHAV TEXCON
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html"
+                        class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Home</a>
+                    <a href="./pages/Collaction.html"
+                        class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Collections</a>
+                    <a href="./pages/About.html"
+                        class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About Us</a>
+                    <a href="./pages/ContactUS.html"
+                        class="text-gray-600 hover:text-gray-900 transition-colors duration-300">ContactUS</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="./pages/Collaction.html"
+                        class="bg-gray-800 text-white font-semibold py-2 px-4 rounded-full hover:bg-gray-700 transition-colors duration-300">
+                        Shop Now
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button"
+                        class="text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="./index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Home</a>
+                <a href="./pages/Collaction.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Collections</a>
+                <a href="./pages/About.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">About
+                    Us</a>
+                <a href="./pages/ContactUS.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Contact</a>
+                <a href="./pages/Collaction.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium bg-gray-800 text-white text-center hover:bg-gray-700">Shop
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <section class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center hero-bg"
+            style="background-image:url('./images/vishal-banik-V6T99SnUCyA-unsplash.jpg'); background-attachment: fixed;">
+        </div>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 p-8 md:p-12 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+                Crafting Quality Textiles for a Sustainable Future
+            </h1>
+            <p class="text-lg md:text-xl mb-8">
+                Explore our collection of ethically sourced fabrics, woven with care and precision to meet the highest
+                standards of quality and design.
+            </p>
+            <a class="inline-block text-white font-semibold py-3 px-8 rounded-full shadow-lg 
+            bg-gradient-to-br from-purple-600 to-blue-500 
+            hover:from-purple-700 hover:to-blue-600 
+            transition-all duration-300 ease-in-out 
+            transform hover:scale-105 hover:shadow-2xl" href="#collections">
+                Discover Our Collections
+            </a>
+        </div>
+    </section>
+
+    <section id="collections">
+         <div class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-extrabold text-center text-gray-800 mb-12">Our Bestsellers</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <div class="relative h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover"
+                         src="./images/AEROLINE.jpg"
+                         alt="Smartwatch Pro"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/F0F2F5/374151?text=Image+Not+Found';">
+                    <!-- Top Seller label removed -->
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">
+                        AEROLINE
+                    </h2>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                        Advanced health tracking, long battery life, and seamless connectivity.
+                    </p>
+                    <a href="./pages/ContactUS.html" class="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 ease-in-out">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+                        <!-- Product Card 2 -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <div class="relative h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover"
+                         src="./images/COTS WOOL.jpg"
+                         alt="Smartwatch Pro"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/F0F2F5/374151?text=Image+Not+Found';">
+                    <!-- Top Seller label removed -->
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">
+                        COTS WOOL
+                    </h2>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                        Advanced health tracking, long battery life, and seamless connectivity.
+                    </p>
+                    <a href="./pages/ContactUS.html" class="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 ease-in-out">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+                                    <!-- Product Card 3 -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <div class="relative h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover"
+                         src="./images/HYCROSS.jpg"
+                         alt="Smartwatch Pro"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/F0F2F5/374151?text=Image+Not+Found';">
+                    <!-- Top Seller label removed -->
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">
+                        HYCROSS
+                    </h2>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                        Advanced health tracking, long battery life, and seamless connectivity.
+                    </p>
+                    <a href="./pages/ContactUS.html" class="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 ease-in-out">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+                                                <!-- Product Card 3 -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
+                <div class="relative h-48 overflow-hidden">
+                    <img class="w-full h-full object-cover"
+                         src="./images/ROYAL SLUB.jpg"
+                         alt="Smartwatch Pro"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x300/F0F2F5/374151?text=Image+Not+Found';">
+                    <!-- Top Seller label removed -->
+                </div>
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">
+                        ROYAL SLUB
+                    </h2>
+                    <p class="text-gray-600 text-sm mb-4 line-clamp-2">
+                        Advanced health tracking, long battery life, and seamless connectivity.
+                    </p>
+                    <a href="./pages/ContactUS.html" class="w-full bg-indigo-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300 ease-in-out">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-gray-300 py-6">
+        <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-center items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold tracking-wide">KESHAV TEXCON</span>
+            </div>
+            <div class="mt-2 sm:mt-0 sm:ml-4 text-sm text-center">
+                &copy; 2025 KESHAV TEXCON
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

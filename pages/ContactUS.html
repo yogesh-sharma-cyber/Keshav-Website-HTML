@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KESHAV TEXCON</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* This style is to prevent the fixed nav from overlapping the content */
+        body {
+            padding-top: 4rem; /* Adjust based on your nav height */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="bg-white shadow-lg fixed w-full z-20 top-0 left-0">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-2xl font-bold text-gray-800 tracking-wide">
+                    KESHAV TEXCON
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="/index.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Home</a>
+                <a href="./Collaction.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Collections</a>
+                <a href="./About.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About Us</a>
+                <a href="./ContactUS.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">ContactUS</a>
+            </div>
+            <div class="hidden md:block">
+                <a href="./Collaction.html"
+                    class="bg-gray-800 text-white font-semibold py-2 px-4 rounded-full hover:bg-gray-700 transition-colors duration-300">
+                    Shop Now
+                </a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button"
+                    class="text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Home</a>
+            <a href="./Collaction.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Collections</a>
+            <a href="./About.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">About Us</a>
+            <a href="./ContactUS.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Contact</a>
+            <a href="./Collaction.html" class="block px-3 py-2 rounded-md text-base font-medium bg-gray-800 text-white text-center hover:bg-gray-700">Shop Now</a>
+        </div>
+    </div>
+</nav>
+
+<section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+            <div class="p-8 sm:p-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-2">Get in Touch</h2>
+                    <p class="text-gray-600">
+                        We'd love to hear from you! Please fill out the form below or use our contact information to reach us.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                    <div class="md:order-2">
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" name="name" id="name" autocomplete="name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input id="email" name="email" type="email" autocomplete="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                <input id="phone" name="phone" type="tel" autocomplete="tel" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                            </div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="md:order-1">
+                        <div class="space-y-8">
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Office Address</h3>
+                                <p class="text-gray-600">
+                                    123 Weaving Lane,<br>
+                                    Textile City, TX 12345<br>
+                                    Country
+                                </p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
+                                <p class="text-gray-600">+91 98765 43210</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Email</h3>
+                                <p class="text-gray-600">info@keshavtexcon.com</p>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">Business Hours</h3>
+                                <p class="text-gray-600">
+                                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                    Saturday: 10:00 AM - 4:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+<footer class="bg-gray-800 text-gray-300 py-6">
+  <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-center items-center">
+    <div class="flex items-center space-x-2">
+      <span class="text-xl font-bold tracking-wide">KESHAV TEXCON</span>
+    </div>
+    <div class="mt-2 sm:mt-0 sm:ml-4 text-sm text-center">
+      &copy; 2025 KESHAV TEXCON
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+        <nav class="bg-white shadow-lg fixed w-full z-20 top-0 left-0">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-gray-800 tracking-wide">
+                        KESHAV TEXCON
+                    </a>
+                </div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="/index.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Home</a>
+                    <a href="./Collaction.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Collections</a>
+                    <a href="./About.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">About Us</a>
+                    <a href="./ContactUS.html" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">ContactUS</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="./Collaction.html"
+                        class="bg-gray-800 text-white font-semibold py-2 px-4 rounded-full hover:bg-gray-700 transition-colors duration-300">
+                        Shop Now
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button"
+                        class="text-gray-800 hover:text-gray-600 focus:outline-none focus:text-gray-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Home</a>
+                <a href="./Collaction.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Collections</a>
+                <a href="./About.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">About
+                    Us</a>
+                <a href="./ContactUS.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-100">Contact</a>
+                <a href="./Collaction.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium bg-gray-800 text-white text-center hover:bg-gray-700">Shop
+                    Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Simple JavaScript to toggle the mobile menu
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <footer class="bg-gray-800 text-gray-300 py-6">
+  <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-center items-center">
+    <div class="flex items-center space-x-2">
+      <span class="text-xl font-bold tracking-wide">KESHAV TEXCON</span>
+    </div>
+    <div class="mt-2 sm:mt-0 sm:ml-4 text-sm text-center">
+      &copy; 2025 KESHAV TEXCON
+    </div>
+  </div>
+</footer>
+</body>
+</html>
